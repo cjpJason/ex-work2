@@ -1,5 +1,4 @@
 #include<iostream>
-#include"math.h"
 #include<math.h>
 using namespace std;
 bool isPrime(int num) {
@@ -20,13 +19,13 @@ bool isPrime(int num) {
 }
 int main() {
 	int n;
-	cout << "ÊäÈëÒ»¸ö´óÓÚ3µÄÕûÊý" << endl;
+	cout << "è¾“å…¥ä¸€ä¸ªå¤§äºŽ3çš„æ•´æ•°" << endl;
 	cin >> n;
 	if (isPrime(n) == true) {
-		cout << n << "ÎªËØÊý";
+		cout << n << "ä¸ºç´ æ•°";
 	}
 	else {
-		cout << n << "²»ÎªËØÊý";
+		cout << n << "ä¸ä¸ºç´ æ•°";
 	}
 	system("pause");
 }
