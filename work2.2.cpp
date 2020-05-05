@@ -22,11 +22,23 @@ int main() {
 	cin>>n;
 	switch(isPrime(n)){
 		case 0:
-			cout<<n<<"不为素数";break;
+			cout<<n<<"不为素数"<<endl;break;
 		case 1:
-			cout<<n<<"为素数";break;
+			cout<<n<<"为素数"<<endl;break;
 		case 2:
-			cout<<n<<"小于3";break;
+			cout<<n<<"小于3"<<endl;break;
 		default: break;
 	}
+	while(isPrime(n)!=1){
+		cout<<"输入不为素数，继续输入"<<endl;
+		cin>>n; 
+	}
+/*while循环若替换为:
+do  {
+cout<<"输入不为素数，继续输入"<<endl;
+cin>>n; 
 }
+while(isPrime(n)!=1);
+区别就是，do while 会先执行一遍语句，然后再判断是否是素数 
+*/ 
+
